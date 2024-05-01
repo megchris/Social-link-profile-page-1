@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    }
+
+.container img{
+    object-fit:fill;
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 45%;
+}
+.container{
+    background-color: rgb(20, 18, 18);
+    line-height: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 2px inset black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    height: 37em;
+    width: 28em;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.container h3{
+    color: rgb(241, 216, 30);
+}
+
+.container h5{
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.contBt{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:-20px;
+}
+.contBt button{
+    padding: 0.8em;
+    width: 360px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgb(18, 14, 14);
+    color: white;
+    cursor:pointer;
+
+}
+
+.contBt button:hover{
+    border-color: orange;
+    transition: all 1s;
+}
+.contBt button:active{
+    transform: translateX(10px);
+}
+
+ @media screen and (max-width: 476px) {
+    .container{
+        width: 22em;
+    }
+
+    .contBt button{
+        width: 18em;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 376px) {
+    .container{
+        width: 17em;
+    }
+
+    .contBt button{
+        width: 15em;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .container{
+        width: 14em;
+    }
+
+    .contBt button{
+        width: 11em;
+    }
+}
